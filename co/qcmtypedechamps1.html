@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Exercice d'auto-&eacute;valuation</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.101 / Opale 3.6.020">
+  <meta name="revision" content="2018-11-05 13:31">
+  <link rel="start" href="CHAMPLOND.html" title="CHAMPLOND">
+  <meta name="author" content="N.Dugu&eacute; - T.Chaillou ">
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"jo4cg827"};
+/*1*/ window.scLoadParams = {destUri:"/co/qcmtypedechamps1.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+ </head>
+ <body class="subWin eval">
+  <div id="root"><header id="header" role="banner"><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article eval"><h2 class="hBk_ti"><span>Champ Num_adh</span></h2><div class="hBk_co "><script type="text/JavaScript">
+var fPddsVWLOGkCbwAsdQyk9h_Aeval = {
+	fFreeMarker : false,
+	fSingleResp : false,
+	fHighlight : "hover",
+
+		fTooltipOptions : {CLASS:"tooltip"},
+
+	fId : "fPddsVWLOGkCbwAsdQyk9h",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "init" : {
+		var vForm = document.forms.fPddsVWLOGkCbwAsdQyk9h_Aeval_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+		this.fDisableInteraction = false;
+
+var vLoadRespSession = "eval";
+for (var i=0; i < vForm.length; i++) {
+			var vInput = vForm.elements[i];
+			vInput.checked = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vInput.value);
+			var vRespMarker = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vInput.value+"_marker");
+			if(vRespMarker != null) vInput.fMarker = scServices.dataUtil.deserialiseObjJs(vRespMarker);
+		}
+
+
+		this.setSolution(false);
+
+		scAssmntMgr.gmcqUpdateUi("fPddsVWLOGkCbwAsdQyk9h_Aeval");
+
+		this.mapClick = function(pInput, pIdx, pEvent) {
+			if (this.fDisableInteraction) return false;
+			pEvent = pEvent || window.event;
+			if (scCoLib.isIE) pEvent.cancelBubble = true;
+			pInput.checked = !pInput.checked;
+			this.setResp(pInput, pIdx, pEvent);
+			return false;
+		}
+var vRespSession = "eval";
+
+			if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+
+			this.setResp = function(pInput, pIdx, pEvent) {
+
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, pIdx, pInput.checked);
+
+
+				scAssmntMgr.gmcqUpdateUi("fPddsVWLOGkCbwAsdQyk9h_Aeval");
+				this.computeScore();
+				scServices.assmntMgr.commit();
+			}				
+
+
+		this.computeScore = function() {
+
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for (var i=0; i < vForm.length; i++) {
+			var vInput = vForm.elements[i];
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, vInput.value, vInput.checked);
+		}
+}
+this.computeScore();
+
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+case "read" : {
+		var vForm = document.forms.fPddsVWLOGkCbwAsdQyk9h_Aeval_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+		this.fDisableInteraction = true;
+
+var vLoadRespSession = "eval";
+for (var i=0; i < vForm.length; i++) {
+			var vInput = vForm.elements[i];
+			vInput.checked = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vInput.value);
+			var vRespMarker = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vInput.value+"_marker");
+			if(vRespMarker != null) vInput.fMarker = scServices.dataUtil.deserialiseObjJs(vRespMarker);
+		}
+
+
+		this.setSolution(false);
+
+		scAssmntMgr.gmcqUpdateUi("fPddsVWLOGkCbwAsdQyk9h_Aeval");
+
+		this.mapClick = function(pInput, pIdx, pEvent) {
+			if (this.fDisableInteraction) return false;
+			pEvent = pEvent || window.event;
+			if (scCoLib.isIE) pEvent.cancelBubble = true;
+			pInput.checked = !pInput.checked;
+			this.setResp(pInput, pIdx, pEvent);
+			return false;
+		}
+this.setResp = function(pInput, pIdx, pEvent) {
+
+
+				scAssmntMgr.gmcqUpdateUi("fPddsVWLOGkCbwAsdQyk9h_Aeval");
+				this.computeScore();
+				scServices.assmntMgr.commit();
+			}	
+
+
+		this.computeScore = function() {
+
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.fPddsVWLOGkCbwAsdQyk9h_Aeval_form;
+		switch(this.fCurSeq) {
+
+	case "init" : {
+
+		break;
+	}
+
+	case "read" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(scServices.assmntMgr.getCompletionStatus(this.fId, "eval") != "complete" && true) return "init";
+	return "read";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.fPddsVWLOGkCbwAsdQyk9h_Aeval_form.lastChild;
+		while(vTR.nodeType!=1) vTR = vTR.previousSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			while(vTR.nodeName.toLowerCase()!="tr") vTR = vTR.nextSibling;
+			vTR.className = "assmntSolCheck " + vTR.className;
+			vTR = vTR.nextSibling;
+
+			while(vTR.nodeName.toLowerCase()!="tr") vTR = vTR.nextSibling;
+			vTR.className = "assmntSolCheck " + vTR.className;
+			vTR = vTR.nextSibling;
+
+			while(vTR.nodeName.toLowerCase()!="tr") vTR = vTR.nextSibling;
+			vTR.className = "assmntSolUnche " + vTR.className;
+			vTR = vTR.nextSibling;
+
+			while(vTR.nodeName.toLowerCase()!="tr") vTR = vTR.nextSibling;
+			vTR.className = "assmntSolUnche " + vTR.className;
+			vTR = vTR.nextSibling;
+
+			while(vTR.nodeName.toLowerCase()!="tr") vTR = vTR.nextSibling;
+			vTR.className = "assmntSolUnche " + vTR.className;
+			vTR = vTR.nextSibling;
+
+		}
+		scAssmntMgr.gmcqSetSolution("fPddsVWLOGkCbwAsdQyk9h_Aeval", pShown);
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		scAssmntMgr.gmcqInitUi("fPddsVWLOGkCbwAsdQyk9h_Aeval");
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("fPddsVWLOGkCbwAsdQyk9h_Aeval_A");
+		vNodeRoot.style.display = "block"; 
+		scAssmntMgr.gmcqHighlight(this);
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = scOnUnloads[scOnUnloads.length] = fPddsVWLOGkCbwAsdQyk9h_Aeval;
+</script><div id="fPddsVWLOGkCbwAsdQyk9h_Aeval_A" style="display:none;"><div class="evalBody"><div class="question"><div class="rBk "><p>Indiquer les zones permettant d'identifier le champ &quot;Num_adh&quot; comme cl&eacute; primaire de la relation ADH&Eacute;RENT.</p></div></div><div class="response" aria-live="polite"><div class="choiceMap "><form action name="fPddsVWLOGkCbwAsdQyk9h_Aeval_form" id="fPddsVWLOGkCbwAsdQyk9h_Aeval_form"><div style="position:relative;width:575px;height:550px;" class="choiceMap_map "><img src="../res/champsnumadh.png" width="575" height="550" alt class="choiceMap_img "><div style="position:absolute;left:99px;top:518px;width:42px;height:3px;" class="choiceMap_zn "><span class="choiceMap_mk "></span></div><div style="position:absolute;left:14px;top:77px;width:3px;height:3px;" class="choiceMap_zn "><span class="choiceMap_mk "></span></div><div style="position:absolute;left:83px;top:400px;width:33px;height:2px;" class="choiceMap_zn "><span class="choiceMap_mk "></span></div><div style="position:absolute;left:73px;top:427px;width:28px;height:3px;" class="choiceMap_zn "><span class="choiceMap_mk "></span></div><div style="position:absolute;left:73px;top:504px;width:29px;height:3px;" class="choiceMap_zn "><span class="choiceMap_mk "></span></div><img src="../lib-sc/assmntDhtmlTransf/empty.gif" width="575" height="550" alt usemap="#mapfPddsVWLOGkCbwAsdQyk9h_Aeval" style="position:absolute;border:0px;left:0px;top:0px;" class="choiceMap_epy "><map name="mapfPddsVWLOGkCbwAsdQyk9h_Aeval"><area shape="rect" coords="16,512,223,529" href="#" onclick="fPddsVWLOGkCbwAsdQyk9h_Aeval.mapClick(sc$('fPddsVWLOGkCbwAsdQyk9h_Aeval_0'),0,event); return false;"><area shape="rect" coords="8,70,23,87" href="#" onclick="fPddsVWLOGkCbwAsdQyk9h_Aeval.mapClick(sc$('fPddsVWLOGkCbwAsdQyk9h_Aeval_1'),1,event); return false;"><area shape="rect" coords="17,396,183,407" href="#" onclick="fPddsVWLOGkCbwAsdQyk9h_Aeval.mapClick(sc$('fPddsVWLOGkCbwAsdQyk9h_Aeval_2'),2,event); return false;"><area shape="rect" coords="17,421,157,435" href="#" onclick="fPddsVWLOGkCbwAsdQyk9h_Aeval.mapClick(sc$('fPddsVWLOGkCbwAsdQyk9h_Aeval_3'),3,event); return false;"><area shape="rect" coords="16,499,159,512" href="#" onclick="fPddsVWLOGkCbwAsdQyk9h_Aeval.mapClick(sc$('fPddsVWLOGkCbwAsdQyk9h_Aeval_4'),4,event); return false;"></map></div><table><tr class="choiceMap_ch "><th class="choiceMap_in "><input type="checkbox" name="fPddsVWLOGkCbwAsdQyk9h_Aeval_0" id="fPddsVWLOGkCbwAsdQyk9h_Aeval_0" value="0" onclick="fPddsVWLOGkCbwAsdQyk9h_Aeval.setResp(this, 0, event);"></th><td class="choiceMap_la "><div class="choice"><div class="label"></div></div></td></tr><tr class="choiceMap_ch "><th class="choiceMap_in "><input type="checkbox" name="fPddsVWLOGkCbwAsdQyk9h_Aeval_1" id="fPddsVWLOGkCbwAsdQyk9h_Aeval_1" value="1" onclick="fPddsVWLOGkCbwAsdQyk9h_Aeval.setResp(this, 1, event);"></th><td class="choiceMap_la "><div class="choice"><div class="label"></div></div></td></tr><tr class="choiceMap_ch "><th class="choiceMap_in "><input type="checkbox" name="fPddsVWLOGkCbwAsdQyk9h_Aeval_2" id="fPddsVWLOGkCbwAsdQyk9h_Aeval_2" value="2" onclick="fPddsVWLOGkCbwAsdQyk9h_Aeval.setResp(this, 2, event);"></th><td class="choiceMap_la "><div class="choice"><div class="label"></div></div></td></tr><tr class="choiceMap_ch "><th class="choiceMap_in "><input type="checkbox" name="fPddsVWLOGkCbwAsdQyk9h_Aeval_3" id="fPddsVWLOGkCbwAsdQyk9h_Aeval_3" value="3" onclick="fPddsVWLOGkCbwAsdQyk9h_Aeval.setResp(this, 3, event);"></th><td class="choiceMap_la "><div class="choice"><div class="label"></div></div></td></tr><tr class="choiceMap_ch "><th class="choiceMap_in "><input type="checkbox" name="fPddsVWLOGkCbwAsdQyk9h_Aeval_4" id="fPddsVWLOGkCbwAsdQyk9h_Aeval_4" value="4" onclick="fPddsVWLOGkCbwAsdQyk9h_Aeval.setResp(this, 4, event);"></th><td class="choiceMap_la "><div class="choice"><div class="label"></div></div></td></tr></table></form></div></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><span class="evalCounter"><span class="seen">1</span><span class="over">/</span><span class="total">5</span></span><nav class="pageTurner" role="navigation"><ul><li><a rel="next" href="sexeadh.html" target="_self" class="btnNav nextEval" title="Suivant (Exercice d'auto-&eacute;valuation)"><span>Suivant</span></a></li></ul></nav></div></div></main></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("des:.mediaPlayer");scImgMgr.init();</script>
+ </body>
+</html>
